@@ -1,0 +1,25 @@
+# CALCULADORA SOMA / UBTRACAO / MULTIPLICACAO / DIVISAO
+num1 = float(input('Digite um valor:'))
+num2 = float(input('Digite o segundo valor:'))
+print('Qua a operacao voce deseja fazer, digite o valor entre(1-4):')
+print('\t 1 - soma')
+print('\t 2 - subtracao')
+print('\t 3 - multiplicacao')
+print('\t 4 - divisao')
+
+op = input('Digite o valor entre (1-4):')
+if (op == '1'):
+  print(num1, '+', num2, ' = ', num1+num2)
+elif(op == '2'):
+  print(num1, '-', num2, ' = ', num1-num2)
+elif(op == '3'):
+  print(num1, '*', num2, ' = ', num1*num2)
+elif(op == '4'):
+  print(num1, '/', num2, ' = ', num1/num2)
+else:
+  print('Voce adicionou uma opcao invalida!, tente novamente')
+resp = input('Continuar? [S] para sim e [N] para não!')
+if resp in 'Nn':
+   print('Saindo...')
+   break
+
